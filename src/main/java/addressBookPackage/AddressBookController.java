@@ -2,9 +2,7 @@ package addressBookPackage;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 
 
 @Controller
@@ -15,6 +13,12 @@ public class AddressBookController {
     public AddressBookController(AddressBookRepository adr, BuddyInfoRepository bir){
         this.addressBookRepository = adr;
         this.buddyInfoRepository = bir;
+    }
+
+    @RequestMapping("/")
+    public @ResponseBody
+    String greeting() {
+        return "Hello, World";
     }
 
     @GetMapping("/addressbook")
