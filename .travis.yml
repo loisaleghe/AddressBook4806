@@ -1,6 +1,5 @@
 language: java
-before_install:
-    - chmod +x mvnw
+dist: trust
 deploy:
   provider: heroku
   app: addressbookapplois
