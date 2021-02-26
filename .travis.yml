@@ -1,5 +1,5 @@
 language: java
-
+dist: trusty
 deploy:
   provider: heroku
   "api-key: $HEROKU_API_KEY"
