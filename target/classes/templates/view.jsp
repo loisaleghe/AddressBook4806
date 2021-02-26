@@ -7,3 +7,9 @@
         hello world
     </jsp:body>
 </templates:app>
+
+<templates:addBuddy>
+    <jsp:body>
+        Add new buddy!
+     </jsp:body>
+</templates:addBuddy>

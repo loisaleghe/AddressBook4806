@@ -1,3 +1,10 @@
+<%@ tag language="java" description="Application template" pageEncoding="UTF-8" %>
+
+<%@ taglib prefix="templates" tagdir="/WEB-INF/tags/templates" %>
+<%@ taglib prefix="t" tagdir="/WEB-INF/tags/" %>
+
+<%@ attribute name="css" fragment="true" %>
+<%@ attribute name="js" fragment="true" %>
 <!DOCTYPE HTML>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>

@@ -46,7 +46,11 @@ public class AddressBookController {
 
         buddyInfoRepository.save(buddyAdded);
 
-        AddressBook addressBookToAdd = addressBookRepository.findById(AddressBookID);
+        AddressBook addressBookToAdd = new AddressBook();
+        BuddyInfo defaultbuddy = new BuddyInfo("testgirl", "testhome", "testphone");
+        defaultbuddy.setId((long) 1);
+        addressBookToAdd.addBuddy(defaultbuddy);
+        addressBookToAdd = addressBookRepository.findById(AddressBookID);
         addressBookToAdd.addBuddy(buddyAdded);
         addressBookRepository.save(addressBookToAdd);
         return "addBuddy";
