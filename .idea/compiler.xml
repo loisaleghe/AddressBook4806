@@ -10,7 +10,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="AddressBook" target="15" />
+      <module name="AddressBook" target="1.7.0_76" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
