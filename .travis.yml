@@ -3,9 +3,8 @@ language: java
     - chmod +x mvnw
 deploy:
   provider: heroku
-    api-key: $HEROKU_API_KEY
-      app: addressbookapplois
-        on:
-          all_branches: true
-            skip_cleanup: true
-            
+  app: addressbookapplois
+  api_key: $HEROKU_API_KEY
+  on:
+     all_branches: true
+     skip_cleanup: true
